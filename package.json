@@ -1,0 +1,10 @@
+{
+  "name": "simple-chat",
+  "description": "Simple Node.js web chat",
+  "author": "felipedjinn",
+  "dependencies": {
+    "express": "~3.4",
+    "socket.io": "~0.9",
+    "jade": "~1.3"
+  }
+}
