@@ -108,6 +108,7 @@ function emitOnlineUsers() {
 
 
 // Starts the server at port 3000
-server.listen(3000, function() {
+var port = Number(process.env.PORT || 5000);
+server.listen(port, function() {
   console.log('Listening on port %d', server.address().port);
 });
