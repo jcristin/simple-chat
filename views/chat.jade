@@ -10,30 +10,29 @@ html(lang="en")
         script(src='chat.js')
 
     body
-        div.container#main
-            div.page-header
+        div.container-fluid#main
+            div.page-header.text-center
                 h1 Realtime Chat com Node.js, Express e Socket.io
 
 
-            div#form-nickname.center-block.text-center
-                h3 Choose a name
-                form
-                    div.form-group
-                        input(type='text')#nickname.form-control(placeholder="Nickname...")    
-                    button.btn.btn-primary#go-chat Go chat
+            div#form-nickname.row
+                div.text-center.col-sm-12.col-md-6.col-md-offset-3
+                    h3 Choose a name
+                    form
+                        div.form-group
+                            input(type='text')#nickname.form-control(placeholder="Nickname...")    
+                        button.btn.btn-primary#go-chat Go chat
 
 
-            div#chat
-                div.panel.panel-default
-                    div.panel-body
-                        div#chat-container
-
-                div.row
-                    form.form-chat
-                        div.form-group.col-md-11
-                            input(type='text')#message.form-control(placeholder="message ...")
-                        button.btn.btn-primary#submit Send
-                    
-                div.row
-                p Online user(s): 
-                        span.online-users
+            div#chat.row
+                div.col-sm-12.col-md-12
+                    div.panel.panel-default
+                        div.panel-body
+                            div#chat-container
+                    div.row
+                        form.form-chat.col-sm-12
+                            div.form-group.col-xs-12.col-sm-10.col-lg-11
+                                input(type='text')#message.form-control(placeholder="message ...")
+                            button.btn.btn-primary.col-sm-2.col-lg-1#submit Send
+                        p.col-xs-12.col-md-12 Online user(s): 
+                                span.online-users

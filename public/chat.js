@@ -210,6 +210,7 @@ function setNickname() {
       if (data == 'ok') {
         $('#form-nickname').hide();
         $('#chat').show();
+        $messageInput.focus();
       } else {
         userNickname = '';
         alert('This nickname is already taken.');
