@@ -6,6 +6,7 @@ html(lang="en")
         link(rel='stylesheet', href='chat.css')
 
         script(src='https://code.jquery.com/jquery-1.11.0.min.js')
+        script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
         script(src='/socket.io/socket.io.js')
         script(src='chat.js')
 
@@ -21,7 +22,7 @@ html(lang="en")
                     form
                         div.form-group
                             input(type='text')#nickname.form-control(placeholder="Nickname...")    
-                        button.btn.btn-primary#go-chat Go chat
+                        button.btn.btn-primary#go-chat(data-loading-text="Loading...") Go chat
 
 
             div#chat.row
