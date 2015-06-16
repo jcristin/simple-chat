@@ -1,10 +1,10 @@
 {
   "name": "simple-chat",
   "description": "Simple Node.js web chat",
-  "author": "felipedjinn",
+  "author": "jc,
   "repository": {
     "type": "git",
-    "url": "https://github.com/felipedjinn/simple-chat.git"
+    "url": ""
   },
   "dependencies": {
     "express": "^3.4.8",

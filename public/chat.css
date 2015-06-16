@@ -1,3 +1,14 @@
+.bkimg {
+    background-size: cover;
+    background-image: url(/img/chat.png);
+}
+
+#links {
+  margin-top:15px;
+  margin-bottom:15px;
+  margin-right: 0px;
+}
+
 #form-nickname {
   margin-top:30px;
   margin-bottom:30px;
@@ -12,7 +23,7 @@
 }
 
 #chat-container {
-  height:400px;
+  height:500px;
 }
 #chat-container .row {
   margin:0;
@@ -30,20 +41,25 @@
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
-
   float:left;
 }
+
 .message.me {
   color:#fff;
-  background:#0085fe;
+  background:#cc0000;
   text-align:right;
-
   float:right;
 }
 
+.message.server {
+  color: #000;
+  background: #ffcc00;
+}
+
+
 @media (max-width: 767px) {
     #chat-container {
-      height:200px;
+      height:500px;
     }
 
     .form-chat .col-xs-12 {
@@ -52,6 +68,7 @@
 
     .form-chat {
         margin-bottom:15px;
+        margin-top: 15px;
     }
 
     #submit {
