@@ -129,9 +129,8 @@ function connect(socket, nickname) {
 }
 
 
-/**
-* Get the user nickname
-*/
+
+// Get the user nickname
 function getNickname(socket) {
     var nickname = false;
     

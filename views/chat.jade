@@ -1,30 +1,43 @@
 doctype html
+
 html(lang="en")
     head
         title DHL eCom Support - Chat Line
-        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css')
         link(rel='stylesheet', href='chat.css')
 
         script(src='https://code.jquery.com/jquery-1.11.0.min.js')
-        script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+        script(src='//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js')
         script(src='/socket.io/socket.io.js')
         script(src='nicescroll.js')
         script(src='underscore.js')
         script(src='chat.js')
 
-    body
-        div.container#main
-            div.page-header.text-center
-                h1 DHL eCom Chat
+    body.bkimg
+
+      div.container
+        div#links.row
+          .col-md-12
+            .btn-group.btn-group-sm.pull-right
+              a.btn.btn-danger.dropdown-toggle(data-toggle='dropdown') Links 
+                span.caret
+              |               
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='https://www.fastsupport.com/', target='_blank') Suporte Remoto 
+                li
+                  a(href='http://www.dhl.pt/', target='_blank') Site DHL 
 
 
+        div.container
+                                          
             div#form-nickname.row
                 div.text-center.col-sm-12.col-md-6.col-md-offset-3
-                    h3 Choose a name
+                    h2 Suporte eCom via Chat
                     form
                         div.form-group
-                            input(type='text')#nickname.form-control(placeholder="Nickname...")    
-                        button.btn.btn-primary#go-chat(data-loading-text="Loading...") Go chat
+                            input(type='text')#nickname.form-control(placeholder="Digite o seu nome ...")    
+                        button.btn.btn-danger#go-chat(data-loading-text="A carregar...") Iniciar conversa
 
 
             div#chat.row
@@ -35,7 +48,6 @@ html(lang="en")
                     div.row
                         form.form-chat.col-sm-12
                             div.form-group.col-xs-12.col-sm-10.col-lg-11
-                                input(type='text')#message.form-control(placeholder="message ...")
-                            button.btn.btn-primary.col-sm-2.col-lg-1#submit Send
-                        p.col-xs-12.col-md-12 Online user(s): 
-                                span.online-users
+                                input(type='text')#message.form-control(placeholder="Mensagem ...")
+                            button.btn.btn-danger.col-sm-2.col-lg-1#submit Enviar
+                        
